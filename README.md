@@ -4,17 +4,16 @@
 bridge that lets classic rotary phones and lineman’s sets make and receive VoIP
 calls using an **ESP32** and a **Silvertel AG1171** analog line interface.
 
-The main inspration of this was to [get my fathers line set](WesternElectric1013A_README.md) running again in some way
-
+![1013A Watercolor](photos/1013a-watercolor.png)
 ---
 
-## 🎯 Goal
+## Goal
 Make a self-contained, Wi-Fi-enabled SIP endpoint that behaves like a
 traditional analog line for legacy handsets.
 
 ---
 
-## ⚙️ Core Components
+## Core Components
 | Component | Purpose |
 |------------|----------|
 | **ESP32** | MCU + Wi-Fi + SIP/RTP stack |
@@ -27,23 +26,12 @@ traditional analog line for legacy handsets.
 ---
 
 ## 🧩 Planned Features
-- ✅ Loop current and ring generation via AG1171  
-- ✅ Off-hook / on-hook detection  
-- 🔄 Pulse dial decoding → SIP digit mapping  
-- 📞 SIP registration and call control (G.711 μ-law)  
-- 🔊 Local tone generation (dial, busy, ringback)  
-- 🔇 Sidetone and gain trimming for authentic sound  
-
----
-
-## 🧱 Project Structure (planned)
-```
-/hardware
-  └── schematics/
-/firmware
-/docs
-  └── Ag1171-datasheet.pdf
-```
+- Loop current and ring generation via AG1171  
+- Off-hook / on-hook detection  
+- Pulse dial decoding → SIP digit mapping  
+- SIP registration and call control (G.711 μ-law)  
+- Local tone generation (dial, busy, ringback)  
+- Sidetone and gain trimming for authentic sound  
 
 ---
 
@@ -61,7 +49,7 @@ Treat tip and ring as live lines even when powered from 5 V.
 ---
 
 ## 📅 Roadmap
-- [ ] Harware interface and local-echo
+- [ ] Hardware interface and local-echo
 - [ ] Basic SIP registration  
 - [ ] Pulse dial → SIP digit mapping  
 - [ ] Ring cadence and ringback simulation  
@@ -70,9 +58,7 @@ Treat tip and ring as live lines even when powered from 5 V.
 ---
 
 ## 🧠 Inspiration
-This project honors the analog craftsmanship of classic telephony
-and merges it with open-source VoIP.  
-Built for fun, nostalgia, and a deep respect for the sound of a proper rotary click.
+The main inspration of this was to [get my fathers line set](WesternElectric1013A_README.md) running again in some way. Built for fun, nostalgia, and a deep respect for the sound of a proper rotary click.
 
 ---
 
